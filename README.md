@@ -41,7 +41,7 @@ Use token authentication, Private routes, and protected paths
 web servers “serve” web pages it retrieves from project code to users upon request.
 
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-PUT & DELETE
+PUT &  DELETE
 
 ## Project Set Up
 
