@@ -1,6 +1,7 @@
 import React from "react";
 import {Form, Field, withFormik } from 'formik';
 import axios from "axios";
+import '../styles.scss'
 
 
 const Login = props => {
@@ -13,26 +14,35 @@ const Login = props => {
     <div className="login-form">
 
       <h1>Welcome to the Bubble App!</h1>
+      <h2>Login</h2>
 
-          <Form>
+          <div className="form-style">
 
-            <h2>Login</h2>
+                <Form>
 
-            <Field  type="text"
-                    name="username"
-                    placeholder="UserName" />
-
-
-            <Field  type="password"
-                    name="password"
-                    placeholder="Password" />  
+                  
 
 
-            <button type="submit">Enter</button>        
-          
+
+                  <Field  type="text"
+                          name="username"
+                          placeholder="UserName"
+                          className="input" />
 
 
-          </Form>     
+                  <Field  type="password"
+                          name="password"
+                          placeholder="Password"
+                          className="input" />  
+
+
+                  <button type="submit" className="login-btn">Enter</button>        
+                
+
+
+                </Form>
+
+          </div>     
 
     </div>
   );
